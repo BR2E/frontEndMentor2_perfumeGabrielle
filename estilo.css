@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --frances: 'Fraunces', serif;
+    --montser: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--Cream);
+}
+
+.container{
+    width: 350px;
+    margin: 30px auto;
+
+}
+
+.imgPerfume{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-image: url('./images/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+}
+
+.perfume{
+    margin: 20px 20px 10px;
+    font-family: var(--montser);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--DarkGrayishBlue);
+}
+
+.texto h2{
+    font-family: var(--frances);
+    font-size: 3rem;
+    margin: 0 20px;
+}
+
+.descrption{
+    font-family: var(--montser);
+    font-size: 1.6rem;
+    color: var(--DarkGrayishBlue);
+    margin: 20px 0 20px 20px;
+}
+
+.precios{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--White);
+}
+
+.precio1{
+    font-size: 3rem;
+    font-family: var(--frances);
+    font-weight: 700;
+    color: var(--DarkCyan);
+    margin-right: 20px;
+}
+
+
+.precio2{
+    font-size: 1.4rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    background-color: var(--White);
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    padding: 0 20px 30px;
+}
+
+button{
+    padding: 15px 90px;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    font-size: 1.4rem;
+    font-family: var(--montser);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.iconCar{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url('./images/icon-cart.svg');
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color:hsl(156, 36%, 15%);
+}
